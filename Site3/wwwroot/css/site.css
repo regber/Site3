@@ -17,6 +17,71 @@
     margin:0;
 }
 
-button-style {
+.button-style {
+    border:none;
     background-color: #ffc200;
+    color:#333333;
+    font-family:'Montserrat bold';
+    cursor:pointer;
+    text-transform:uppercase;
+    border-radius:4px;
 }
+.button-style:hover {
+    background-color: #ffd44a;
+}
+
+.small-button {
+    width: 245px;
+    height: 50px;
+    font-size: 19.2px;
+}
+.regular-button {
+    width: 322px;
+    height: 65px;
+    font-size: 25px;
+}
+.subscribe-button {
+    font-size:25px;
+    width: 222px;
+    height: 65px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+.header{
+    font-family:'Grand Hotel';
+}
+.header .high{
+    font-size:124.6px;
+}
+.header .medium {
+    font-size: 100px;
+}
+.header .small {
+    font-size: 75px;
+}
+.header .smaller{
+    font-size:41.67px;
+}
+.header-mini {
+    font-family: 'Montserrat bold';
+}
+.font-yellow {
+    color: #ffc200;
+}
+.font-black {
+    color: #333333;
+}
+.font-white{
+    color: white;
+}
+
+.text{
+    font-family:'Montserrat regular';
+}
+
+.link{
+    font-family:'Montserrat regular';
+    color:white;
+}
+
