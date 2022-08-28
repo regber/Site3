@@ -51,16 +51,16 @@
 .header{
     font-family:'Grand Hotel';
 }
-.header .high{
+.header.high{
     font-size:124.6px;
 }
-.header .medium {
+.header.medium {
     font-size: 100px;
 }
-.header .small {
+.header.small {
     font-size: 75px;
 }
-.header .smaller{
+.header.smaller{
     font-size:41.67px;
 }
 .header-mini {
@@ -70,9 +70,9 @@
     color: #ffc200;
 }
 .font-dark {
-    color: #333333;
+    color: #2f2f2f;
 }
-.font-white{
+.font-light{
     color: white;
 }
 
@@ -83,10 +83,11 @@
 .link{
     font-family:'Montserrat regular';
     color:white;
+    text-decoration:none;
 }
 
 :root {
-    --height-page: 765px;
+    --height-page: 900px;
 }
 
 body {
@@ -94,9 +95,23 @@ body {
     grid-template-rows: repeat(7,var(--height-page));
 }
 
-.page1{
-    display:grid;
-    grid-template-columns: 600px 1fr;
+.background-dark {
+    background-color: #2f2f2f;
+}
+
+.background-light {
+    background-color: white;
+}
+
+.content {
+    z-index: 1;
+    position: relative;
+}
+
+.page1 {
+    display: grid;
+    grid-template-columns: minmax(200px,603px) 1fr;
+    height: var(--height-page);
 }
 
 .background_1 {
@@ -104,6 +119,74 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 }
-.background-dark {
-    background-color: #303030;
+
+.background_1_cap {
+    height: var(--height-page);
+    margin-left: -173px;
+    position: absolute;
 }
+
+.menu {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: repeat(6,auto);
+    align-items: center;
+    margin: 46px 60px 0 0px;
+    min-width: 780px;
+}
+.menu > * {
+    margin: 0 5px;
+}
+
+.menu .link{
+    font-size:25px;
+}
+
+
+.search {
+    display: inline-flex;
+    align-items: center;
+    overflow: hidden;
+    min-width: 30px;
+}
+
+.search > form {
+    height: 30px;
+    width: 0px;
+    transition: all 0.5s;
+}
+
+.search:hover > form {
+    width: 210px;
+}
+
+.search input {
+    height: 100%;
+}
+
+.search input[type='text'] {
+    width: 200px;
+    margin-left: 10px;
+    border-radius: 4px;
+    outline: 0;
+    border: none;
+    font-size:20px;
+}
+
+.search input[type='submit'] {
+    display: none;
+}
+
+.search div, .search form {
+    display: inline-block;
+}
+
+.page1 .content .text{
+    font-size:29.7px;
+}
+
+
+
+
+
+
