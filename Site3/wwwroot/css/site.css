@@ -249,6 +249,58 @@ body {
     bottom: 185px;
 }
 
+.page2 {
+    padding: 120px 170px;
+    display: grid;
+    justify-items: center;
+    height: var(--height-page);
+    text-align: center;
+}
+
+.page2 .content {
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    grid-template-rows: repeat(3,1fr);
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 70px;
+}
+
+.page2 .header.small {
+    text-align: justify;
+    width: 280px;
+}
+
+.page2 > .text {
+    font-size: 25.2px;
+    padding: 0 100px;
+    margin-top: 16px;
+}
+
+.page2 .meal {
+    display: grid;
+    justify-items: center;
+    width: 260px;
+    text-align: center;
+}
+.page2 .meal img {
+    -webkit-mask-image: url(/images/circle-mask.svg);
+    mask-image: url(/images/circle-mask.svg);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask-size: 240px;
+    object-fit: cover;
+    width: 240px;
+    height: 240px;
+}
+
+.page2 .meal .header{
+    margin-top:5px;
+}
+.page2 .meal .text {
+    margin-top: 10px;
+}
 
 
 
