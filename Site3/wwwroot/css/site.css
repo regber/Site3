@@ -103,16 +103,24 @@ body {
     background-color: white;
 }
 
-.content {
-    z-index: 1;
-    position: relative;
-}
-
 .page1 {
     display: grid;
     grid-template-columns: minmax(200px,603px) 1fr;
     height: var(--height-page);
 }
+
+.content {
+    z-index: 1;
+    position: relative;
+}
+
+.page1 .content {
+    height: 95%;
+}
+.page1 > div {
+    position: relative;
+}
+
 
 .background_1 {
     background-image: url(/images/background_1.png);
@@ -121,7 +129,7 @@ body {
 }
 
 .background_1_cap {
-    height: var(--height-page);
+    height: 100%;
     margin-left: -173px;
     position: absolute;
 }
@@ -183,6 +191,62 @@ body {
 
 .page1 .content .text{
     font-size:29.7px;
+}
+
+.page1 .filling {
+    padding-top: 115px;
+    padding-left: 50px;
+    padding-right: 180px;
+    padding-bottom: 183px;
+    height: 58%;
+}
+
+.page1 .filling p {
+    padding-left: 5px;
+}
+
+.page1 .small-button {
+    margin-top: 60px;
+}
+
+.page1 .content > img {
+    position:absolute;
+}
+.page1 .content > img:nth-of-type(1) {
+    left: -80px;
+    top: 264px;
+}
+.page1 .content > img:nth-of-type(2) {
+    left: 20px;
+    top: 65px;
+}
+.page1 .content > img:nth-of-type(3) {
+    right: 215px;
+    top: 84px;
+}
+.page1 .content > img:nth-of-type(4) {
+    right: 130px;
+    top: 250px;
+}
+.page1 .content > img:nth-of-type(5) {
+    left: 30px;
+    bottom: 120px;
+}
+.page1 .content > img:nth-of-type(6) {
+    left: 200px;
+    bottom: 50px;
+}
+.page1 .content > img:nth-of-type(7) {
+    right: 342px;
+    bottom: 88px;
+}
+.page1 .content > img:nth-of-type(8) {
+    right: 182px;
+    bottom: 38px;
+}
+.page1 .content > img:nth-of-type(9) {
+    right: 78px;
+    bottom: 185px;
 }
 
 
