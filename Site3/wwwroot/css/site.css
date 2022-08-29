@@ -65,6 +65,7 @@
 }
 .header-mini {
     font-family: 'Montserrat bold';
+    text-transform:uppercase;
 }
 .font-yellow {
     color: #ffc200;
@@ -255,12 +256,12 @@ body {
     justify-items: center;
     height: var(--height-page);
     text-align: center;
+    align-content: start;
 }
 
 .page2 .content {
     display: grid;
     grid-template-columns: repeat(3,auto);
-    grid-template-rows: repeat(3,1fr);
     width: 100%;
     justify-content: space-between;
     margin-top: 70px;
@@ -347,6 +348,7 @@ body {
     position: relative;
     bottom: 187px;
     left: -5%;
+    margin-top: 5px;
 }
 .page3 .content .text {
     font-size: 25px;
@@ -356,5 +358,56 @@ body {
     margin-top:60px;
 }
 
+.page4 {
+    display: grid;
+    height: var(--height-page);
+    position: relative;
+}
 
+.page4 .header {
+    margin-top: 75px;
+}
 
+.page4 .text {
+    font-size: 24.7px;
+    text-align: center;
+    padding-right: 20px;
+    width: 810px;
+}
+
+.page4 .content {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin-top: 100px;
+    position:relative;
+}
+
+.page4 .param{
+    position:relative;
+    margin:0 25px;
+}
+
+.page4 .param .header-mini:first-of-type {
+    font-size: 50.5px;
+    position: absolute;
+    left: 50%;
+    top: 37%;
+    transform: translate(-50%,-50%);
+}
+.page4 .param .header-mini:last-of-type {
+    font-size: 28.9px;
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%,-50%);
+}
+
+.page4 >img, .page4 .content>img{
+    position:absolute;
+}
+
+.page4 > div {
+    display: grid;
+    align-content: start;
+    justify-items: center;
+}
