@@ -411,3 +411,77 @@ body {
     align-content: start;
     justify-items: center;
 }
+
+
+
+
+
+
+
+.page5 {
+    display: grid;
+    grid-template-rows: 340px 1fr;
+    height: var(--height-page);
+}
+
+.page5 > div {
+    position: relative;
+}
+
+.page5 > div:nth-of-type(1) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    min-width: 1330px;
+    z-index: 1;
+}
+
+.background_3_cap {
+    width: 100%;
+    position: absolute;
+    top: -54px;
+    max-height: 520px;
+}
+
+.page5 .meal {
+    position: relative;
+    top: 110px;
+    right: 5px;
+}
+
+.page5 .meal img {
+    -webkit-mask-image: url(/images/circle-mask.svg);
+    mask-image: url(/images/circle-mask.svg);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask-size: 465px;
+    object-fit: cover;
+    width: 465px;
+    height: 465px;
+}
+
+.page5 .content {
+    width: 630px;
+    position: relative;
+    top: 119px;
+    right: -8%;
+    margin-top: 5px;
+    padding-left: 55px;
+}
+
+.page5 .content .header {
+    padding-top: 5px;
+
+}
+
+.page5 .content .text {
+    font-size: 29.7px;
+    margin-top: 14px;
+
+}
+
+.page5 .content .button-style {
+    margin-top: 65px;
+    margin-left: 5px;
+}
