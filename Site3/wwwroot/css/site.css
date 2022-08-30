@@ -81,10 +81,15 @@
     font-family:'Montserrat regular';
 }
 
-.link{
-    font-family:'Montserrat regular';
-    color:white;
-    text-decoration:none;
+.link {
+    font-family: 'Montserrat regular';
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+.link:hover{
+    border-bottom:1px white solid;
+    margin-bottom:-1px;
 }
 
 :root {
@@ -617,4 +622,48 @@ body {
 .page7 > img:nth-of-type(9) {
     bottom: 225px;
     right: 65px;
+}
+
+.page8 {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-content: center;
+    padding-bottom: 37px;
+}
+
+.page8 .content {
+    padding-left: 95px;
+    padding-right: 140px;
+}
+.page8 .content>div{
+    font-size:0;
+    margin-top:30px;
+}
+.page8 .content > div img {
+    margin-right: 14px;
+}
+
+.page8 .lists {
+    display: grid;
+    grid-auto-flow: column;
+    margin-left: -5px;
+    width: 660px;
+}
+
+.page8 .lists ul {
+    list-style-position: inside;
+    list-style-type: none;
+    font-size:23.6px;
+    line-height:41px;
+}
+
+
+.page8 .header-mini {
+    margin-bottom: 20px;
+    font-size:25px;
+}
+
+.page8 .text{
+    font-size:23.6px;
+    margin-top:28px;
 }
