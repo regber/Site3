@@ -517,7 +517,18 @@ body {
 }
 
 .page6 {
-    background-image: url(/images/background_1.png);
+    height: var(--height-page);
+    background-image: url(/images/background_2.png);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 100%;
+    padding: 0px 160px;
+    text-align: center;
+}
+
+.page6 .text {
+    font-size: 44.9px;
+    margin-top: 260px;
+}
+.page6 .header {
+    margin-top: 25px;
 }
